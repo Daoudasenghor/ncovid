@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Epidemic</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+            <link rel="stylesheet" type="text/css" href="epidemic.css">
+            <script src='epidemic.js' async></script>
+            <link rel="stylesheet" href="css/all.css">
+            <link rel = "stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+        </head>
+        <body>
+            <header>
+            <div role="banner">
+                <nav class="navbar navbar-expand-lg  bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand " href="index.html">
+                            <img src="bakeli/images/logo1.png"><h4>COVID-19</h4>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">                            
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarsExample05">
+                        <ul class="navbar-nav pl-md-5 ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="Home.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Prevention.html">Prevention</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="Appointment.html">Rendez-Vous</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Pages.html">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contact.html">Contactez-Nous</a>
+                            </li>
+                            <li class="checker_btn">
+                            <a href="#"><span>Vérificateur de Symptôme</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"><img src="bakeli/images/search.png"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"><img src="bakeli/images/burger.png"></a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="stop-section">
+                <h4 data-aos="fade-up">Stop COVID-19</h4>
+                <h5 data-aos="fade-up">SUIS-JE A RISQUE ?</h5>
+                <p data-aos="fade-up">Le COVID-19 est une maladie grave. Tout le monde ,<br> y compris les pesonnes vivant avec le VIH, devrait s'assurer d'appliquer<br> les mesures pour réduire leur niveau d'expositions.</p>
+                    <a class="main_btn" data-aos="fade-right">Comment se protéger</a>
+                <div class="media">
+                    <div class="media-body my-auto margin-right">
+                        <img src="bakeli/images/mono.png" data-aos="fade-left">
+                    </div>
+                </div>
+            </div>
+
+            <div class=" row mesures">
+                <div class="col-lg-6">
+                    <div class="media">
+                        <div class="d-flex">
+                            <img src="bakeli/images/icon.svg">
+                        </div>
+                        <div class="media-body">
+                            <h3>Protection<br><span>Comment se protéger</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="media">
+                        <div class="d-flex">
+                            <img src="bakeli/images/icon1.svg" data-aos="zoom-in">
+                        </div>
+                        <div class="media-body">
+                            <h6>Symptomes<br><span>Vérifier les symptômes de base</span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="media">
+                        <div class="d-flex">
+                          <img src="bakeli/images/icon2.svg" data-aos="zoom-in">  
+                        </div>
+                            <div class="media-body">
+                                
+                            <h6>Numéro vert<br><pan>800 00 50</pan></h6>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img src="bakeli/images/icon3.svg" data-aos="zoom-in">
+                            </div>
+                        <div class="media-body">
+                            <h5>A propos<br><span>En savoir plus sur la Covid-19</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="row">
+                    <div class="left">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img src="bakeli/images/project-virus-1.png" data-aos="zoom-in">
+                            </div>
+                            <div class="media-body">
+                                <h4>Pensez-vous etre contaminé ?</h4>
+                                <p>Cliquez notre simple vérificateur de coronavirus pour savoir ce que vous devez faire</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a class="text_btn" href="#" data-aos="fade-left">Cliquez
+                            <svg width="3em" height="1.5em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                            <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/></svg></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="about-section">
+                <div class="row">
+                    <div class="media">                           
+                        <img src="bakeli/images/undraw.svg" data-aos="fade-up">
+                    </div>
+                    <div class="media-body">
+                        <h4>La pendémie COVID-19</h4>
+                        <h5>A propos du Covid-19</h5>
+                        <p>Le COVID-19 est la maladie infectieuse causée par le dernier coronavirus qui a été découvert. Ce nouveau virus et cette maladie étaient inconnus avant l’apparition de la flambée à Wuhan (Chine) en décembre 2019. La COVID-19 est maintenant pandémique et touche de nombreux pays dans le monde...</p>
+                        <h5>C'est quoi le COVID-19 ?</h5>
+                        <p>La pandémie de Covid-19 Écouter est une pandémie d'une maladie infectieuse émergente, appelée la maladie à coronavirus 2019 ou Covid-19, provoquée par le coronavirus SARS-CoV-2. Elle apparaît le 17 novembre 2019 dans la province de Hubei (en Chine centrale), et plus précisément dans la ville de Wuhan, puis se propage dans le monde entier.</p>
+                        <div class="text">
+                            <a class="text_btn" href="#">En savoir plus
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                            <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cas-section">
+            <div class="text">
+                <div align="center">
+                    <h2>La situation du monde </h2>
+                    <h4>Cas confirmés du Covid-19</h4>
+                    <p>[Mis à jour le 10 juillet 2020 à 16h24]</p>
+               <div class="row">
+                <div class="col-md-3">
+                    <div class="media">
+                        <div class="d-flex">
+                            <i></i>
+                        </div>
+                        <div class="media-body">
+                            <img src="bakeli/images/cas.png" data-aos="fade-up">
+                            <h5 data-aos="fade-up">Cas confirmés</h5>
+                            <p data-aos="fade-up">12 373 722</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="media">
+                        <div class="d-flex">
+                            <i></i>
+                        </div>
+                        <div class="media-body">
+                            <img src="bakeli/images/cas1.png" data-aos="fade-up">
+                            <h5 data-aos="fade-up">Nombre de décés</h5>
+                            <p data-aos="fade-up">556 863</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="media">
+                        <div class="d-flex">
+                            <i></i>
+                        </div>
+                            <div class="media-body">
+                                <img src="bakeli/images/cas3.png" data-aos="fade-up">
+                                <h5 data-aos="fade-up">Guérisons</h5>
+                                <p data-aos="fade-up">6 786 196</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="media">
+                            <div class="d-flex">
+                                <i></i>
+                            </div>
+                        <div class="media-body">
+                            <img src="bakeli/images/cas4.png" data-aos="fade-up">
+                            <h5 data-aos="fade-up">Nouveaux cas</h5>
+                            <p data-aos="fade-up">204 967</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            
+            <div class="symptom-section">
+                <div class="title">
+                    <h3>Les symptomes du COVID-19</h3>
+                    <h4>Les symptomes<br>de base</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="symptom_item" data-aos="fade-up">
+                            <div class="media">
+                                <div class="d-flex">
+                                    <li>
+                                        <img src="bakeli/images/images (2).png" class="d-block rounded-circle">
+                                    </li>
+                                </div>
+                                <div class="media-body">
+                                    <h5>La fièvre</h5>
+                                    <p>La fièvre est définie comme une élévation de la température corporelle au-dessus des valeurs normales : 37,2 ° le matin et 37,7 ° le soir, mesuré dans la bouche ou au niveau du tympan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="symptom_item" data-aos="fade-up">
+                            <div class="media">
+                                <div class="d-flex">
+                                    <li>
+                                        <img src="bakeli/images/images (3).png" class="d-block rounded-circle">
+                                    </li>
+                                </div>
+                                <div class="media-body">
+                                    <h5>La fatigue</h5>
+                                    <p>La fatigue appelée encore l'asthénie est une sensation d'épuisement et d'affaiblissement du corps. Elle n'est ni liée à l'effort et ne disparaît pas forcément au repos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="symptom_item" data-aos="fade-up">
+                            <div class="media">
+                                <div class="d-flex">
+                                    <li>
+                                        <img src="bakeli/images/images (4).png" class="d-block rounded-circle">
+                                    </li>
+                                </div>
+                                <div class="media-body">
+                                    <h5>La toux</h5>
+                                    <p>La toux est un phénomène naturel qui permet d'évacuer les mucosités de l'appareil respiratoire. La toux peut être aiguë et apparaitre à la suite d'une infection.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="symptom_item" data-aos="fade-up">
+                            <div class="media">
+                                <div class="d-flex">
+                                    <li>
+                                        <img src="bakeli/images/images (1).png" class="d-block rounded-circle">
+                                    </li>
+                                </div>
+                                <div class="media-body">
+                                    <h5>Le maux de gorge</h5>
+                                    <p>Cette douleur très fréquente est ressentie au fond de la gorge. <br>Plus précisément, elle se situe au niveau du pharynx et des amygdales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="protection-section">
+                <div class="container">
+                    <div class="title text-center">
+                        <h2>Que faire ?</h2>
+                        <h4>Comment se protéger du Covid-19?</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row protect_list_inner">
+                                <div class="col-6">
+                                    <div class="protect_list_item">
+                                        <div class="protect_list_title">
+                                            <h3>Vous devez faire</h3>
+                                            <h6>Assurez-vous de le suivre</h6>
+                                        </div>
+                                        <ul class="nav flex-column">
+                                            <li>
+                                                <a href="#"><i class="fa fa-home"></i>Restez chez vous</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-mask"></i>Portez un masque</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-couch"></i>Désinfectez vos maisons</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-bath"></i>Lavez vos mains</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-thermometer-full"></i>Auto-isolement fréquent</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-tint"></i>Prise d'eau fréquente</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="protect_list_item rouge">
+                                        <div class="protect_list_title">
+                                            <h3>Vous devez éviter</h3>
+                                            <h6>Assurez-vous de le suivre</h6>
+                                        </div>
+                                        <ul class="nav flex-column">
+                                            <li>
+                                                <a href="#"><i class="fa fa-male"></i>La distance sociale</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-frown"></i>Ne vous touchez pas le visage</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-handshake"></i>Évitez les poignées de main</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-chair"></i>Évitez les surfaces infectées</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-tint"></i>Évitez les gouttelettes</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-plane"></i>Ne voyagez pas</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="protect_self_text">
+                                <h3>Qu'est-ce que l'auto-isolement ?</h3>
+                                <p>L’auto-isolement est le fait de se séparer des autres pour éviter de transmettre ou de contracter un virus. Cette mesure préconise le fait de garder ses distances le plus possible entre les membres de son foyer ou de sa communauté.</p>
+                                    <a class="text_btn" href="#">Comment pouvez-vous vous protéger autrement?
+                                        <i><svg width="3em" height="1.5em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                                        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/></svg></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="protect_img text-center">
+                                        <img class="img-fluid" data-aos="fade-up"data-aos-duration="800" src="bakeli/images/protect.png">
+                                    <ul class="nav">
+                                        <li style="animation: rotate 3s linear 0.3s infinite;"><img srcc="bakeli/images/project-virus-1.pn"></li>
+                                        <li><img src="assets/images/icon/project-virus-2.png" alt=""></li>
+                                        <li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-3.png" alt="" style="position: relative; display: block; left: 0px; top: 0px; transform: translate3d(22.825px, 14.8472px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"></li>
+                                        <li><img src="assets/images/icon/project-virus-4.png" alt=""></li>
+                                        <li><img src="assets/images/icon/project-virus-5.png" alt=""></li>
+                                        <li><img src="assets/images/icon/project-virus-6.png" alt=""></li>
+                                        <li><img src="assets/images/icon/project-virus-7.png" alt=""></li>
+                                        <li><img src="assets/images/icon/project-virus-8.png" alt=""></li>
+                                        <li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-9.png" alt="" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(22.825px, 14.8472px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"></li>
+                                        <li><img src="assets/images/icon/project-virus-10.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="laver-section">
+                    <div class="row">
+                        <div class="media">                           
+                           <img src="bakeli/images/laver-mains.jpg" data-aos="zoom-in">
+                        </div>
+                        <div class="media-body">                   
+                            <h5>Les étapes du lavage des mains</h5>
+                            <p>
+                            1-Appliquez du savon et frottez-vous les mains.<br><br>
+                            2-Utilisez une main pour frotter le dos de l'autre main et vice versa<br><br>
+                            3-Frottez vos mains ensemble et nettoyez entre vos doigts<br><br>
+                            4-Frottez le dos de vos doigts contre vos paumes<br><br>
+                            5-Frottez votre pouce avec votre autre main et vice versa<br><br>
+                            6-Frottez le bout de vos doigts sur la paume de votre autre main et vice versa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="prevenir_area">
+                    <div class="container">
+                        <div class="row prevenir_inner">
+                            <div class="col-lg-6">
+                                <div class="prevenir_item_inner row" style="position: relative; height: 756px;">
+                                    <div class="col-sm-6" data-aos="fade-up" data-aos-duration="400">
+                                        <div class="prevenir_item">
+                                            <div class="prevenir_img">
+                                                <img class="img-fluid" src="bakeli/images/home.png" alt="">
+                                            </div>
+                                            <div class="prevenir_text">
+                                                <h4>Restez chez vous</h4>
+                                                <p>Restez chez vous pour éviter de mettre les autres en danger.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6" data-aos="fade-up" data-aos-duration="600">
+                                        <div class="prevenir_item">
+                                            <div class="prevenir_img">
+                                                <img class="img-fluid" src="bakeli/images/mains.jpg">
+                                            </div>
+                                            <div class="prevenir_text">
+                                                <h4>Lavez vos mains régulièrement</h4>
+                                                <p>Lavez vos mains avec un désinfectant à base d'alcool ou lavez-les avec du savon.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6" data-aos="fade-up" data-aos-duration="700">
+                                        <div class="prevenir_item">
+                                            <div class="prevenir_img">
+                                                <img class="img-fluid" src="bakeli/images/distance.jpg">
+                                            </div>
+                                            <div class="prevenir_text">
+                                                <h4>Gardez une distance sociale</h4>
+                                                <p>Gardez une distance d'au moins 1 m entre vous et n'importe qui si vous allez parmi les gens.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="prevenir_item">
+                                            <div class="prevenir_img">
+                                                <img class="img-fluid" src="bakeli/images/masque.jpg">
+                                            </div>
+                                            <div class="prevenir_text">
+                                                <h4>Portez un masque</h4>
+                                                <p>Portez un masque pour limiter la transmission des virus respiratoires et protéger vos proches</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="prevenir_details">
+                                    <div class="prevenir_details_text">
+                                        <h5>Que devrez-vous faire</h5>
+                                        <h2>Comment prévenir le Covid-19 ?</h2>
+                                        <p>Selon le ministère de la Santé, la réponse est claire : Non. Le problème : lorsqu'on tousse, qu'on éternue, qu'on discute, des gouttelettes respiratoires se retrouvent sur les gants, qui servent alors de support au virus. Qui plus est, comme on porte des gants, on se sent protégé, et on fait moins attention à ses gestes. Le moyen idéal pour poser ses mains (gantées) partout et pour transmettre le virus. "Porter des gants est inutile", assure le ministère de la Santé, "sauf dans des situations très spécifiques : personnels soignants réalisant des prélèvements ou gestes à risque". Inutiles donc pour faire les courses.
+                                        <br><br>
+                                        Rappelons les gestes barrières : se laver fréquemment les mains, tousser dans son coude, utiliser des mouchoirs à usage unique et les jeter après utilisation, et les mesures de distanciation sociale.</p>
+                                        <a class="prev_btn" href="#">En savoir plus sur la prévention</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="newsletter-section">
+                        <div class="row">
+                            <div class="left">
+                                <div class="media">
+                                    <h4>Abonnez-vous à notre bulletin d'infos</h4> 
+                                </div>
+                                <div class="media-body">
+                                    <p>Rejoignez notre liste d'abonnés pour recevoir les dernières<br> nouvelles et mises à jour sur la COVID-19 directement dans votre boîte de réception.</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="todo-list" id="list">
+                                    <div class="todo-action">
+                                        <input type="text" id="item" placeholder="Entrer votre e-mail...">
+                                            <button id="add">Cliquez</button>
+                                    <div class="todo-select">
+                                        <input type="checkbox" id="select-all"><span> j'accepte la politique de confidentialité</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+        <div class="footer-secion">
+         <footer class="bg-white">
+             <div class="container py-4">
+                 <div class="row py-3">
+                     <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                         <h6 class="text-uppercase font-weight-bold mb-4">CONTACTS</h6>
+                         <ul class="list-unstyled mb-0">
+                             <li class="mb-2"><i class="fa fa-phone" aria-hidden="true"></i><a href="#" class="text-muted"></a>+221 78 125 05 57</li>
+                             <li class="mb-2"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg><a href="#" class="text-muted"></a>Mbao, PIKINE (SENEGAL)</li>
+                             <li class="mb-2"><a href="#" class="text-muted"><i class="fa fa-envelope-open" aria-hidden="true"></i></a>Dou@gmail.com</li>
+                         </ul>
+                     </div>
+                     
+                     <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                         <h6 class="text-uppercase font-weight-bold mb-4">Prévention</h6>
+                         <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="#" class="text-muted">RESTEZ chez vous autant que possible</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">GARDEZ une distance de sécurité.</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">LAVEZ-VOUS souvent les mains</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">COUVREZ-VOUS la bouche quand vous toussezs</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">VOUS ÊTES MALADE? Appelez votre médecin</a></li>
+                         </ul>
+                     </div>
+                     <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                         <h6 class="text-uppercase font-weight-bold mb-4">Protection</h6>
+                         <ul class="list-unstyled mb-0">
+                             <li class="mb-2"><a href="#" class="text-muted">RESTEZ chez vous autant que possible</a></li>
+                             <li class="mb-2"><a href="#" class="text-muted">GARDEZ une distance de sécurité.</a></li>
+                             <li class="mb-2"><a href="#" class="text-muted">LAVEZ-VOUS souvent les mains</a></li>
+                             <li class="mb-2"><a href="#" class="text-muted">COUVREZ-VOUS la bouche quand vous toussezs</a></li>
+                             <li class="mb-2"><a href="#" class="text-muted">VOUS ÊTES MALADE? Appelez votre médecin</a></li>
+                         </ul>
+                     </div>
+                     <div class="col-lg-4 col-md-6 mb-lg-0">
+                         <h6 class="text-uppercase font-weight-bold mb-4">A propos</h6>
+                         <p class="text-muted mb-4">La COVID-19 est la maladie infectieuse causée par le dernier coronavirus qui a été découvert. Ce nouveau virus et cette maladie étaient inconnus avant l’apparition de la flambée à Wuhan (Chine) en décembre 2019. La COVID-19 est maintenant pandémique et touche de nombreux pays dans le monde...</p>
+                        <ul class="list-inline mt-4">   
+                            <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fab fa-2x fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fab fa-2x fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fab fa-2x fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fab fa-2x fa-youtube"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fab fa-2x fa-vimeo"></i></a></li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </footer>
+
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+        <script> 
+            AOS.init({
+                duration : 1200,
+            }); 
+        </script>
+    </body>
+</html>
